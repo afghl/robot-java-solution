@@ -5,7 +5,7 @@ import com.robotgame.robot.Robot;
 /**
  * Created by afghl on 16/10/19.
  */
-public class SetPositionCommand implements Command {
+public class SetPositionCommand extends Command {
     private int[] position;
     private String direction;
 

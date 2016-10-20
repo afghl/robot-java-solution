@@ -5,7 +5,7 @@ import com.robotgame.robot.Robot;
 /**
  * Created by afghl on 16/10/19.
  */
-public class TurnCommand implements Command {
+public class TurnCommand extends Command {
     private String direction;
 
     public TurnCommand(String direction) {
