@@ -1,7 +1,6 @@
 package com.robotgame.robot;
 
 import com.robotgame.command.Command;
-import com.robotgame.command.PlaceCommand;
 
 import java.util.Arrays;
 
@@ -17,10 +16,7 @@ public class Robot {
     }
 
     public void accept(Command command) {
-        // TODO: // FIXME: 16/10/19
-        if (isPlaced || command instanceof PlaceCommand) {
-            command.solve(this);
-        }
+        command.solve(this);
     }
 
     public void move() {
@@ -38,6 +34,10 @@ public class Robot {
 
     public void setPlaced(boolean placed) {
         isPlaced = placed;
+    }
+
+    public boolean isPlaced() {
+        return isPlaced;
     }
 
     @Override

@@ -2,10 +2,7 @@ package com.robotgame.command;
 
 import com.robotgame.robot.Robot;
 
-/**
- * Created by afghl on 16/10/19.
- */
-public class SetPositionCommand extends Command {
+class SetPositionCommand extends Command {
     private int[] position;
     private String direction;
 
@@ -14,7 +11,7 @@ public class SetPositionCommand extends Command {
         this.direction= direction;
     }
 
-    public void solve(Robot robot) {
+    public void safeSolve(Robot robot) {
         robot.setPosition(position, direction);
     }
 }

@@ -2,17 +2,14 @@ package com.robotgame.command;
 
 import com.robotgame.robot.Robot;
 
-/**
- * Created by afghl on 16/10/19.
- */
-public class TurnCommand extends Command {
+class TurnCommand extends Command {
     private String direction;
 
     public TurnCommand(String direction) {
         this.direction = direction;
     }
 
-    public void solve(Robot robot) {
+    public void safeSolve(Robot robot) {
         robot.turn(direction);
     }
 }

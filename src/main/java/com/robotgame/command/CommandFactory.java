@@ -1,8 +1,5 @@
 package com.robotgame.command;
 
-/**
- * Created by afghl on 16/10/19.
- */
 public class CommandFactory {
     public static Command create(String s) {
         if ("PLACE".equals(s)) {
